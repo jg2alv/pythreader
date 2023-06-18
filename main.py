@@ -28,7 +28,7 @@ def main() -> int:
             return 1
             
         idx = int(page) - 1
-        if idx >= numpages:
+        if idx >= numpages or idx < 0:
             print("'{}' is out of range {}".format(page, pagerange))
             return 1
 
